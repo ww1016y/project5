@@ -400,6 +400,56 @@ clean: gtest/gtest/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory pick_objects
+
+# Convenience name for "all" pass in the directory.
+pick_objects/all:
+
+.PHONY : pick_objects/all
+
+# Convenience name for "clean" pass in the directory.
+pick_objects/clean: pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : pick_objects/clean
+
+# Convenience name for "preinstall" pass in the directory.
+pick_objects/preinstall:
+
+.PHONY : pick_objects/preinstall
+
+#=============================================================================
+# Target rules for target pick_objects/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/build.make pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/build.make pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/project5/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/project5/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/project5/build/CMakeFiles 0
+.PHONY : pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/build.make pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+# clean rule for target.
+clean: pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory slam_gmapping/slam_gmapping
 
 # Convenience name for "all" pass in the directory.
@@ -408,7 +458,7 @@ slam_gmapping/slam_gmapping/all:
 .PHONY : slam_gmapping/slam_gmapping/all
 
 # Convenience name for "clean" pass in the directory.
-slam_gmapping/slam_gmapping/clean: slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/clean
+slam_gmapping/slam_gmapping/clean:
 
 .PHONY : slam_gmapping/slam_gmapping/clean
 
@@ -416,38 +466,6 @@ slam_gmapping/slam_gmapping/clean: slam_gmapping/slam_gmapping/CMakeFiles/_catki
 slam_gmapping/slam_gmapping/preinstall:
 
 .PHONY : slam_gmapping/slam_gmapping/preinstall
-
-#=============================================================================
-# Target rules for target slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir
-
-# All Build rule for target.
-slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build.make slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/depend
-	$(MAKE) -f slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build.make slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/workspace/project5/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/all
-
-# Build rule for subdir invocation for target.
-slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/project5/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/workspace/project5/build/CMakeFiles 0
-.PHONY : slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# clean rule for target.
-slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/build.make slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/clean
-.PHONY : slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-# clean rule for target.
-clean: slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/clean
-
-.PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory turtlebot/turtlebot
@@ -2133,7 +2151,7 @@ clean: slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_nodejs.dir/cl
 # Target rules for target slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir
 
 # All Build rule for target.
-slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/all
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_py.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/all: slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_cpp.dir/all
@@ -3575,7 +3593,7 @@ clean: slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/clean
 # Target rules for target slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir
 
 # All Build rule for target.
-slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: slam_gmapping/slam_gmapping/CMakeFiles/_catkin_empty_exported_target.dir/all
+slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: pick_objects/CMakeFiles/_catkin_empty_exported_target.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: slam_gmapping/gmapping/CMakeFiles/geometry_msgs_generate_messages_eus.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: slam_gmapping/gmapping/CMakeFiles/bond_generate_messages_py.dir/all
 slam_gmapping/gmapping/CMakeFiles/slam_gmapping.dir/all: slam_gmapping/gmapping/CMakeFiles/nodelet_generate_messages_cpp.dir/all
