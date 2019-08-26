@@ -1,0 +1,8 @@
+prefix=/home/workspace/project5/devel
+
+Name: turtlebot_description
+Description: Description of turtlebot_description
+Version: 2.4.2
+Cflags: 
+Libs: -L/home/workspace/project5/devel/lib 
+Requires: urdf xacro

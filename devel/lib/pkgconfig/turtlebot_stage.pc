@@ -1,0 +1,8 @@
+prefix=/home/workspace/project5/devel
+
+Name: turtlebot_stage
+Description: Description of turtlebot_stage
+Version: 2.2.3
+Cflags: 
+Libs: -L/home/workspace/project5/devel/lib 
+Requires: 
