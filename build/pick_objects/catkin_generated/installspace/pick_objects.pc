@@ -1,8 +1,0 @@
-prefix=/home/workspace/project5/install
-
-Name: pick_objects
-Description: Description of pick_objects
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/workspace/project5/install/lib 
-Requires: 
