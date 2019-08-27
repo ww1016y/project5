@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
+subdirs(add_markers)
 subdirs(pick_objects)
 subdirs(slam_gmapping/slam_gmapping)
 subdirs(turtlebot/turtlebot)

@@ -50,7 +50,7 @@ int main( int argc, char** argv )
   uint8_t phase = 0;
   uint8_t goal_num = 0;
 
-  float goals[2][3] = {{5,5,1},{1,-3,-1}};
+  float goals[2][3] = {{1,-4,1},{-1,7,-1}};
 
   visualization_msgs::Marker marker;
 

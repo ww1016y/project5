@@ -58,8 +58,8 @@ int main( int argc, char** argv )
         case 1:
             ROS_INFO("phase 1 : Publish the marker at the pickup zone and wait 5 seconds");
             marker.action = visualization_msgs::Marker::ADD;
-            marker.pose.position.x = 5;
-            marker.pose.position.y = 5;
+            marker.pose.position.x = 1;
+            marker.pose.position.y = -4;
             marker.pose.position.z = 0;
             marker.pose.orientation.x = 0.0;
             marker.pose.orientation.y = 0.0;
@@ -79,8 +79,8 @@ int main( int argc, char** argv )
         case 3:
             ROS_INFO("phase 3 : Publish the marker at the drop off zone");
             marker.action = visualization_msgs::Marker::ADD;
-            marker.pose.position.x = 1;
-            marker.pose.position.y = -3;
+            marker.pose.position.x = -1;
+            marker.pose.position.y = 7;
             marker.pose.position.z = 0;
             marker.pose.orientation.x = 0.0;
             marker.pose.orientation.y = 0.0;
