@@ -22,8 +22,8 @@ int main(int argc, char** argv){
 
   // set up the frame parameters
   goal_1.target_pose.header.frame_id = "map";
+  goal_2.target_pose.header.frame_id = "map";  
   goal_1.target_pose.header.stamp = ros::Time::now();
-  goal_2.target_pose.header.frame_id = "map";
   goal_2.target_pose.header.stamp = ros::Time::now();
 
   // Define a position and orientation for the robot to reach each goals
@@ -37,39 +37,39 @@ int main(int argc, char** argv){
 
 
   // Send the goal position and orientation for the robot to reach
-  ROS_INFO("Robot is traveling to the pickup zone");
+  ROS_INFO("Going to the pickup zone");
   ac.sendGoal(goal_1);
 
-  // Wait an infinite time for the results
+  // Wait 
   ac.waitForResult();
 
   // Check if the robot reached its goal
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
   {
-    ROS_INFO("Robot picked up the virtual object");
-    sleep(5);    //Wait for 5 seconds
+    ROS_INFO("Pick up the virtual object");
+    sleep(5);    
   }
   else
   {
-    ROS_INFO("The robot failed to reach pickup zone");
+    ROS_INFO("Fail to reach pickup zone");
     return 1;
   }
 
   // Send the goal position and orientation for the robot to reach
-  ROS_INFO("Robot is traveling to the drop off zone");
+  ROS_INFO("Going to the drop off zone");
   ac.sendGoal(goal_2);
 
-  // Wait an infinite time for the results
+  // Wait 
   ac.waitForResult();
 
   // Check if the robot reached its goal
   if(ac.getState() == actionlib::SimpleClientGoalState::SUCCEEDED)
   {
-    ROS_INFO("Robot dropped the virtual object");
+    ROS_INFO("Drop the virtual object");
   }
   else
   {
-    ROS_INFO("The robot failed to reach drop off zone");
+    ROS_INFO("Fail to reach drop off zone");
     return 1;
   }
   while(true)

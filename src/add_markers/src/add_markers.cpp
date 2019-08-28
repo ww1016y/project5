@@ -56,7 +56,7 @@ int main( int argc, char** argv )
     switch (phase)
     {
         case 1:
-            ROS_INFO("phase 1 : Publish the marker at the pickup zone and wait 5 seconds");
+            ROS_INFO("1. Publish the marker at the pickup zone");
             marker.action = visualization_msgs::Marker::ADD;
             marker.pose.position.x = 1;
             marker.pose.position.y = -4;
@@ -70,14 +70,14 @@ int main( int argc, char** argv )
         break;
         
         case 2:
-            ROS_INFO("phase 2 : Hide the marker and wait 5 seconds");
+            ROS_INFO("2. Hide the marker");
             marker.action = visualization_msgs::Marker::DELETE;
             marker_pub.publish(marker);
             sleep(5);
         break;
         
         case 3:
-            ROS_INFO("phase 3 : Publish the marker at the drop off zone");
+            ROS_INFO("3. Publish the marker at the drop off zone");
             marker.action = visualization_msgs::Marker::ADD;
             marker.pose.position.x = -1;
             marker.pose.position.y = 7;
